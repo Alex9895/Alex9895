@@ -903,6 +903,10 @@ width: 90%;
   font-size: small;
   }
   
+  .form {    
+    width: 100%;
+  }
+  
   .column {
     display: block;
     width: 100%;
@@ -925,10 +929,6 @@ width: 90%;
   .tabcontent h1{ 
     font-size: 28px; 
     margin-top: -18px;  
-  }
-  
-  .form {    
-    width: 100%;
   }
 
   h1 {
