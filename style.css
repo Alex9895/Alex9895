@@ -1,0 +1,977 @@
+/***********************************************ALL PAGES***********************************/
+body {font-family: "Lato", sans-serif;
+
+  /* set the background color */
+  background-color: #020107;
+  padding: 20px;
+  margin: 20px;
+}
+
+/*.......main navigation bar............*/
+.tablink {
+  box-shadow:2px 2px 5px #dc3333;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  background-color:   #41080b;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/*navigator bar hover effect*/
+.tablink:hover {
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  background-color:  rgb(128, 3, 3); 
+}
+
+#main_content {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#main_content * {
+  box-sizing: border-box;
+}
+
+.navbar a {  
+  float: right;
+  padding: 12px;
+  color: rgb(30, 27, 27);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color:#2ae9c5c7;
+  text-shadow: 2px 2px 5px #000;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tabcontent p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*....Page name on the banner....*/
+.tabcontent h1{ 
+  margin-bottom: -17px;
+  margin-top: 6px;
+  padding-bottom: 0px;
+  font-style: italic;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 38px;
+  color:#f72a2a;
+  text-shadow: 2px 2px 5px #000;
+  font-weight: bold;
+}
+
+/*........Baner....................*/
+#Cars {
+box-shadow: 0 0 22px -3px rgba(255, 255, 255);
+background:url("images/trafic.jpg")no-repeat center;
+background-color: gray;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 100px;
+border-radius: 10px;
+display: block;
+}
+
+/*..........Logo............ */
+.logo img {
+  width: 155px; 
+  height: auto; 
+}
+
+.logo {
+  /*logo box-shadow*/
+  box-shadow:2px 2px 5px #dc3333;
+  border-radius: 100%;
+  background-color:#41080b;
+  /* Allows precise positioning */
+  position: absolute; 
+   /*Aligns to the top of the page */
+  top:55px;
+  /*Aligns to the left of the page */            
+  left: 50px; 
+  /*Removes any default margin */           
+  margin: 0;    
+  /*Removes any default padding */      
+  padding: 0;         
+}
+
+/*logo hover effect*/
+.logo :hover{
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  border-radius: 60%;
+  background-color:  rgb(128, 3, 3);
+}
+
+/*.......Login icon......*/
+.login {
+   /*box-shadow*/
+  border: 1px solid hsla(0, 0%, 65.1%);
+  /*box-shadow*/
+  box-shadow:2px 2px 5px  #dc3333 ;
+  position: absolute;
+  /* Sets the login 47px from the top */
+  top: 47px; 
+  /* Sets the login 47px from the right */
+  right: 47px; 
+  /*sets round frame 60%*/
+  border-radius: 60%;
+  background-color:#41080b;
+}
+
+/*login hover effect*/
+.login :hover{
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  border-radius: 60%;
+  background-color:  rgb(128, 3, 3);
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*.....Alexander motors text.......*/
+h1 {
+  text-shadow: 2px 2px 5px #dc3333;
+  font-size: 30px;
+  color:   white;
+  text-align: center;
+  word-break: break-all;
+}
+
+/*.....Footer......*/
+.footer_row {
+  /*box-shadow*/
+  box-shadow:2px 2px 5px #dc3333;
+  /* footer width 100% */
+  width: 100%;
+  /* makes the footer text in the middle*/
+  text-align: center;
+  /* set the background color of the footer to brown */
+  background-color:   #41080b;
+  /* makes the footer font white */
+  color: white;
+  /* no bottom space */
+  bottom: 0;
+  /* to set space above footer 20px*/
+  margin-top: 50px;
+  /* makes footer height 2px */
+  padding: 2px;
+}
+
+/***************************************CARS/CARS FOR PARTS PAGES********************************************/
+
+/*....type of engine text.....*/
+h2 {  
+  color:  white;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding between each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  /* Hide all elements by default */
+  display: none; 
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*...Images Frame....... */
+.content {
+  box-shadow:2px 2px 5px #dc3333;
+  margin-top: 16px;
+  background-color: rgb(30, 27, 27);
+  color: white;
+  padding: 10px;
+
+}
+.content image{
+  height: 20px;
+}
+
+/*.....Images Frame hoover effect....*/
+.content:hover{
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  background-color: #41080b;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/*...the buttons style.....*/
+.btn {
+  /*box-shadow: 0 0 22px -3px rgba(255, 255, 255);*/
+  box-shadow:2px 2px 5px #dc3333;
+  margin-top: 16px;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/*buttons hover effect*/
+.btn:hover {
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  background-color: rgb(128, 3, 3);
+}
+
+.btn.active {
+  background-color: #41080b;
+  color: white;
+}
+
+/**********************************************CONTACT US PAGE**************************************************/
+.page-content2 h2 {
+  text-shadow: 2px 2px 5px #dc3333;
+}
+ 
+/*.....OPEN TIME TEXT........*/
+.page-content {
+  box-shadow:2px 2px 5px #dc3333;
+  border-radius: 5px;
+  /* to make open times text bold  */
+  font-weight: bold;
+  /* to make open times text color red  */
+  color: #ee3b41; 
+  /* to align text to the center */
+  text-align: center;
+  /* open time text 45%  */
+  width: 45%;
+}
+
+/*Map section*/
+.sectionmap {
+  /*to unsplit map and text  */
+  display: flex;
+  /*space between map and text */
+  justify-content: space-between;
+  /*to align map and text to the center */
+  align-items: center;
+  /*set padding 20px around  */
+  padding: 20px; 
+}
+
+.map {
+  /* to make the map width 45% */
+  width: 45%;
+  /* to make the map height 300px */
+  height: 300px;
+}
+ 
+.map iframe {
+  /*shadow box*/  
+  box-shadow:2px 2px 5px #dc3333;
+  /*to make map width 100%*/
+  width: 100%;
+  /*to make map height 100%*/
+  height: 100%;
+  /*to remove border*/
+  border-radius: 5px;
+}
+
+/*map hover effect*/
+.map iframe:hover {
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+
+/*Contact Us Form*/
+input,
+textarea {
+  /* display separate */
+  display: block;
+  /* font style */ 
+  font-family: "Open Sans", sans-serif;
+  /* font size */
+  font-size: 16px;
+  /* space between elements in contact form */
+  margin-bottom: 16px;
+  /* size in input form 8px  */
+  padding: 8px;
+  /* contact form wide 100% */
+  width: 100%;
+}
+
+/*Contact form on Contact Us Page*/
+.form {
+  /*border with shadow*/
+  box-shadow:2px 2px 5px #dc3333;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  z-index: 99;
+  padding: 2rem;
+  /* font color */
+  color: #ee3b41; 
+  /* to set margin for top and bottom 24px,and auto for left and right on the contact form */
+  margin: 24px auto;
+ /* makes contact form 50% of the screen */
+ width: 50%;
+}
+
+.form h2 {
+  text-align: center;
+  color: white; 
+}
+
+/*Buttons on contact form*/
+.button_container {
+  /*to arrange buttons in the row*/
+  display: flex;
+  /* to make space between buttons*/
+  justify-content: space-between;
+}
+
+/*button submut*/
+.button_submit {
+  border-radius: 5px;
+  /*makes the submit button green*/
+  background-color: green;
+  /* makes the submit button text white */
+  color: white;
+  /* no border around the submit button */
+  border: none;
+  /* size for the submit button */
+  margin: 1rem;
+  /*to make pointer for the submit button  */
+  cursor: pointer;
+}
+
+/*submut button hover effecr*/
+.button_submit:hover {
+  background-color: rgb(2, 97, 2);
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+ 
+/*buttton reset*/
+.button_reset {
+  border-radius: 5px;
+  /* makes the reset button red */
+  background-color: #ee3b41;
+  /* makes the reset button text white */
+  color: white;
+  /* no border around the reset button */
+  border: none;
+  /* size for the button reset 1em */
+  margin: 1rem;
+  /*to make pointer for the reset button  */
+  cursor: pointer;
+}
+
+/*button reset hover effect*/
+.button_reset:hover {
+  background-color: #ff0008;
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+
+
+/*****************************************LOGIN PAGE******************************************************/
+.login_pagecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  position: relative;
+  width: 22.2rem;
+  margin-top: 60px;
+}
+
+.form-container {
+  border: 1px solid hsla(0, 0%, 65.1%);
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  /*form position*/
+  z-index: 99;
+  padding: 2rem;
+}
+
+.login-container form input {
+  display: block;
+  padding: 14.5px;
+  width: 100%;
+  margin: 2rem 0;
+  color: black;
+  outline: none;
+  background-color: #B0B0B08E;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  backdrop-filter: blur(15px);
+}
+
+::placeholder
+{
+  color: black;
+}
+
+.login-container form input:focus {
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+  animation: wobble 0.3s ease-in;
+}
+
+.login-container form button {
+  background-color: #41080b;
+  color: #FFFFFF;
+  display: block;
+  padding: 13px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.1s ease-in-out;
+  border: none;
+}
+
+.login-container form button:hover {
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+  transform: scale(1.02);
+}
+
+.carr_image {
+  position: absolute;
+  top: -24%;
+  right: -5px;
+  width: 90%;
+}
+
+/*******************************************************Ask a question**************************************/
+.ask_question h2{
+  text-shadow: 2px 2px 5px #dc3333;
+  text-align: center;
+}
+
+.question_form{
+  margin: auto;
+  box-shadow:2px 2px 5px #dc3333;
+  width: 75%;
+}
+.button_ask_form{
+  display: flex;
+  /* to make space between buttons*/
+  justify-content: space-between;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  color: #dc3333;
+}
+
+.form-column {
+  width: 48%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.yourtext{
+  color: #dc3333;
+}
+
+.newsletter {
+  color:  #dc3333;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  user-select: none;
+  justify-content: right;
+  padding-right: 15%;
+}
+
+.newsletter input{
+  opacity: 1;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+/**********************************RESERVE PAGE***************************************************/
+.reserve{
+  margin-bottom: 50px;
+  box-shadow:2px 2px 5px #dc3333;
+  font-weight: bold;
+  color: #c10303;
+  text-align: center;
+  
+}
+
+.button_reserve{
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 20px 0 20px 10px;
+  box-shadow:2px 2px 5px #dc3333;
+  background-color: #21bf0f;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  /*to make pointer for the submit button  */
+  cursor: pointer;
+}
+
+.button_reserve:hover {
+  background-color: rgb(2, 97, 2);
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+
+/**********************************ABOUT US PAGE******************************************************************/
+.aboutUscontent {
+  position: relative;
+  width: 100%;  
+}
+
+.aboutUscontent img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+ .text {
+  position: absolute;
+  top: 2%;
+  left: 22%;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background: rgba(49, 4, 4, 0.76);
+  padding: 10px 20px;
+  border-radius: 5px;
+} 
+
+/**********************************CARS IMAGE PAGE************************************************/
+.car_page_main_content{
+  margin: auto;
+  display: flex;
+}
+
+.car_specs {
+  box-shadow:2px 2px 5px #dc3333;
+  font-weight: bold;
+  /* to make text color red  */
+  color: #ee3b41;
+  width: 45%;
+}
+
+/*CARS SPECIFICATIONS TABLE*/
+.table_specs{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_specs td,.table_specs th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table_specs tr:nth-child(even){
+  background-color: #35222263;
+}
+
+.table_specs th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #41080b;
+  color: white;
+}
+
+/*.....Image gallery slideshow.....*/
+
+/* Hide the images by default */
+.myCarPageSlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor_car_page {
+  cursor: pointer;
+}
+
+/* Next and previous buttons on the car image*/
+.prev_car_image,
+.next_car_image {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 10%;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(230, 24, 24);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next_car_image {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_car_image:hover,
+.next_car_image:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.number_car_page_text {
+  color: #c10303;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row_car_page_gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* columns side by side */
+.column_car_page_gallery {
+  float: left;
+  width: 33.3%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo_car_page {
+  opacity: 0.6;
+}
+
+.active_car_page,
+.demo_car_page:hover {
+  opacity: 1;
+}
+
+.cargallery {
+  box-shadow:2px 2px 5px #dc3333;
+  /*set padding 20px around  */
+  padding: 20px;
+  position: relative;
+  width: 55%;
+}
+
+.cargallery img{
+  margin-top: 2px; 
+}
+
+.btn_ask_question {
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  /*makes the ask button green*/
+  background-color: rgb(220, 103, 8);
+  /* makes the ask button text white */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  /*to make pointer for the ask button  */
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn_ask_question:hover {
+  background-color: rgb(220, 202, 8);
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+ 
+.btn_reserve {
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  /* makes the reserve button green */
+  background-color: #0c601d;
+  /* makes the reserve button text white */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  /*to make pointer for the reserve button  */
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.btn_reserve:hover {
+  background-color: #21bf0f;
+  box-shadow: 0 0 36px 1px rgba(255, 255, 255);
+}
+
+/* ************************************************ For mobile ********************************************************/
+/*  when screen resolution less or equals 900px */
+@media (max-width: 900px) 
+{
+  .page-content2 h2 {
+   font-size: small;
+  }
+
+  .car_specs h2 {
+   font-size: small;
+  }
+
+  #Cars {  
+    height: 70px;
+    }
+
+  .logo img {
+    width: 140px; 
+    height: auto; 
+  }
+
+  .sectionmap {
+    /*to unsplit map and text  */
+      display: block;    
+  }
+
+  .map {
+    /* to make the map width 100% */
+    width: 100%;
+    /* to make the map height 300px */
+    height: 300px;
+  }
+
+  .form {    
+width: 90%;
+  }
+
+  .page-content {
+    /* to align text to the center */
+    text-align: center;
+    /* open time text 100%  */
+    width: 100%;
+  }
+
+    h1 {
+      font-size: 20px;
+  }
+
+  .question_form{
+    width:100%;
+  }
+
+  .button_ask_form{
+    width: 100%;
+  }
+
+  .text { 
+    width: 70%;
+    left: 18%;
+    font-size: 10px; 
+  } 
+
+  .form-row {
+    display: block;  
+  }
+
+  .form-column {
+    width: 100%;
+  }
+
+  .footer_row {
+    /* makes footer height 1px */
+    padding: 1px;
+    /* font size 12px*/
+    font-size: 12px;
+
+    /**************************Car Image Page******************/
+  }
+  .car_page_main_content{ 
+    display: block;
+  }
+
+  .car_specs {
+    width: 100%;
+  }
+
+  .cargallery {
+    width: 100%;
+  }
+}
+
+/* .................when screen resolution less or equals 650px..................*/
+@media (max-width: 650px) 
+{
+  body { 
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .tablink {
+ font-size: 12px;
+  }
+
+  #Cars {  
+    height: 30px;
+    }
+
+  .logo {
+  top:25px;            
+  left: 20px; 
+   } 
+
+  .logo img {
+    width: 100px; 
+    height: auto; 
+  }
+
+.login {
+  top: 25px; 
+  right: 20px; 
+}
+
+  .login img{
+    width: 30px;
+    height: auto;
+  }
+
+  .tabcontent p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .tabcontent h1{ 
+    font-size: 28px;   
+    margin-top: -8px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .page-content {
+  font-size: small;
+  }
+  
+  .column {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ...............when screen resolution less or equals 550px..............*/
+
+@media (max-width: 550px) 
+{
+  #Cars {  
+    height: 15px;
+  }
+
+  .logo img {
+    width: 60px; 
+    height: auto; 
+  }
+
+  .tabcontent h1{ 
+    font-size: 28px; 
+    margin-top: -18px;  
+  }
+  
+  .form {    
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 15px; 
+  }
+
+  .text { 
+    font-size: 9px; 
+  } 
+}
+
+/* ...............when screen resolution less or equals 450px..............*/
+@media (max-width: 450px) 
+{
+  #Cars {  
+    height: 20px;
+  }
+
+  .tablink {
+    font-size: 10px;
+  }
+
+  #Cars {  
+    height: 10px;
+  }
+
+  .logo img {
+    width: 50px; 
+    height: auto; 
+  }
+
+  .login img{
+    width: 30px;
+    height: auto;
+  }
+
+  h1 { 
+    font-size: 8px;
+  }
+
+  .text { 
+    width: 90%;
+    left: 3%;
+    font-size: 10px; 
+  } 
+}

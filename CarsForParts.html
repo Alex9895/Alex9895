@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cars Alexander Motors</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+    <div id="Cars" class="tabcontent">
+        <h1>Cars For Parts</h1>
+        <p>Cars With Issues For Parts Or Repairs.</p>
+    </div>
+
+    <div class = "logo">
+      <a href="HomePage.html">
+      <img src="images/logo10.png" alt="logo"></a>
+    </div>
+        
+    <div class = "login">
+      <a href="Login.html">
+      <img src="images/login3.png" alt="login"></a>
+    </div>
+      
+      
+      <button class="tablink" id="tabHomePage" onclick="location.href='HomePage.html'">Cars</button>
+      <button class="tablink" id ="tabCarsForParts" onclick="location.href='CarsForParts.html'">Cars For Parts</button>
+      <button class="tablink" id="AboutUs" onclick="location.href='AboutUs.html'">About Us</button>
+      <button class="tablink" id="tabContactUs" onclick="location.href='ContactUs.html'">Contact Us</button>
+      
+      
+<div id="main_content">
+
+<main>
+  <div class="main">
+
+    <h1>ALEXANDER MOTORS</h1>
+    <hr>
+    
+    <h2>Type of engine</h2>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('petrol')"> Petrol</button>
+      <button class="btn" onclick="filterSelection('diesel')"> Diesel</button>
+      <button class="btn" onclick="filterSelection('electric')"> Electric</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+
+      <div class="column diesel">
+        <div class="content">
+          <a href="Peugeot2.html"><img src="images/carsforparts/peoug/peoug.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Peugeot 206</h4>
+          <p>£500</p>
+        </div>
+      </div>
+
+      <div class="column petrol">
+        <div class="content">
+          <a href="Renault.html"><img src="images/carsforparts/renault/renault.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Renault Clio</h4>
+          <p>£300</p>
+        </div>
+      </div>
+
+      <div class="column diesel">
+        <div class="content">
+          <a href="Santafe.html"><img src= "images/carsforparts/santa/santa.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Hyundai Santa-fe</h4>
+          <p>£600</p>
+        </div>
+      </div>
+      
+      <div class="column petrol">
+        <div class="content">
+          <a href="Fiesta.html"><img src="images/carsforparts/fiesta/fiesta.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Ford Fiesta</h4>
+          <p>£250</p>
+        </div>
+      </div>
+
+      <div class="column diesel">
+        <div class="content">
+          <a href="Mondeo.html"><img src="images/carsforparts/mondeo/mondeo.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Ford Mondeo</h4>
+          <p>£400</p>
+        </div>
+      </div>
+
+      <div class="column petrol">
+        <div class="content">
+          <a href="Peugeot.html"><img src="images/carsforparts/pug/pug.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>peugeot 307</h4>
+          <p>£350</p>
+        </div>
+      </div>
+    
+      <div class="column diesel">
+        <div class="content">
+          <a href="Mondeo2.html"><img src="images/carsforparts/gmondeo/gmondeo.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Ford Mondeo</h4>
+          <p>£150</p>
+        </div>
+      </div>
+
+      <div class="column petrol">
+        <div class="content">
+          <a href="Toyota.html"><img src="images/toyota1.jpg." alt="carr_image" style="width:100%"></a>
+          <h4>Toyota</h4>
+          <p>£300</p>
+        </div>
+      </div>
+
+      <div class="column petrol">
+        <div class="content">
+          <a href="Antara.html"><img src="images/carsforparts/vauxhall/Vauxhall4.jpg" alt="carr_image" style="width:100%"></a>
+          <h4>Vauxhall Antara</h4>
+          <p>£350</p>
+        </div>
+      </div>
+      
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+</main>
+</div>
+  <hr>
+
+  <footer class="footer_row">
+    <p> Aleksandrs Doroscenko. Student Number: 1977927</p>
+  </footer>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+
+</body>
+
+</html>
