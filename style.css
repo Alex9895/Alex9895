@@ -968,7 +968,11 @@ width: 90%;
   h1 { 
     font-size: 8px;
   }
-
+  
+.aboutUscontent img{
+    height: 300px;
+ }
+  
   .text { 
     width: 90%;
     left: 3%;
